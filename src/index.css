@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000 url("/media/komal/New Volume/ReactJs_Programs/breaking-bad-characters/src/Images/bg.jpeg") center center/cover;
+  background-repeat: no-repeat;
+  height: 150vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #3fb573;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 15px;
+  border: 0;
+  margin: 10px 0;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  /* opacity: 0.5; */
+  padding-left: 60px;
+  background-color: black;
+}
+
+header img {
+  width: 15%;
+}
+
+.logo {
+  display: flex;
+}
+
+.search {
+  height: 100px;
+  /* margin-top: -4%; */
+}
+
+input[type='text'] {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: 0;
+  background-color:antiquewhite;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  outline: none;
+}
+
+.cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9rem;
+  
+}
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: #333;
+  color: white;
+  height: 500px;
+  overflow:auto;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+}
+.paginationBttns {
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: black;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: black;
+}
+
+.paginationDisabled a {
+  color: white;
+  background-color: black;
+}
