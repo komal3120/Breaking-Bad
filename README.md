@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Breaking-Bad
+This app is developed in ReactJs with HTML, CSS and Javascript.
+This App shows all Breaking Bad Character with fliping card.
+You can also search character by name in search bar.
+This app also contains pagination.
+
+# Want to demo ?
+
+
+# Getting Started with Create React Breaking Bad App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
