@@ -5,6 +5,7 @@ You can also search character by name in search bar.
 This app also contains pagination.
 
 # Want to demo ?
+https://breaking-bad-characters-site.netlify.app/
 
 
 # Getting Started with Create React Breaking Bad App
