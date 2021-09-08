@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #000 url("/media/komal/New Volume/ReactJs_Programs/breaking-bad-characters/src/Images/bg.jpeg") center center/cover;
+  background: #000 url("/src/Images/bg.jpeg") center center/cover;
   background-repeat: no-repeat;
   height: 150vh;
   color: #fff;
@@ -59,7 +59,8 @@ input[type='text'] {
   padding: 10px;
   font-size: 20px;
   border: 0;
-  background-color:antiquewhite;
+  background-color:transparent;
+  box-shadow: 10px 10px 10px 10px black;
   border-radius: 5px;
   width: 60%;
   margin: auto;
