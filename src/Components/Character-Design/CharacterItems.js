@@ -12,13 +12,12 @@ const CharacterItems = ({item}) => {
     )
 
     setQuote(result.data);
-    
-    
     }
 
     useEffect(() => {
         
-    fetchItems();  
+    fetchItems(); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect (() => {
